@@ -1,0 +1,42 @@
+[
+  {
+    "id": "start",
+    "zh": "开始游玩",
+    "en": "Getting started"
+  },
+  {
+    "id": "installation",
+    "zh": "Prism 安装",
+    "en": "Prism installation"
+  },
+  {
+    "id": "main-game",
+    "zh": "主玩法与选牌",
+    "en": "Main game and drafting"
+  },
+  {
+    "id": "races",
+    "zh": "宝藏竞赛与传送门竞赛",
+    "en": "Treasure and portal races"
+  },
+  {
+    "id": "rooms",
+    "zh": "自定义房间",
+    "en": "Custom rooms"
+  },
+  {
+    "id": "replay",
+    "zh": "回放与战绩",
+    "en": "Replays and history"
+  },
+  {
+    "id": "troubleshooting",
+    "zh": "故障排查",
+    "en": "Troubleshooting"
+  },
+  {
+    "id": "contributing",
+    "zh": "贡献与版本",
+    "en": "Contributing and versions"
+  }
+]
