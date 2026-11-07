@@ -10,9 +10,29 @@
     "en": "Prism and MultiMC"
   },
   {
+    "id": "modes",
+    "zh": "玩法总览与挑战模式",
+    "en": "Modes and full-board challenges"
+  },
+  {
     "id": "main-game",
     "zh": "主玩法与选牌",
     "en": "Main game and drafting"
+  },
+  {
+    "id": "ranked",
+    "zh": "排位规则与局内操作",
+    "en": "Ranked rules and match controls"
+  },
+  {
+    "id": "seeds",
+    "zh": "排位种子池与结构距离",
+    "en": "Seed pool and structure distances"
+  },
+  {
+    "id": "scoring",
+    "zh": "排位积分制度",
+    "en": "Ranked scoring"
   },
   {
     "id": "casual",
@@ -25,9 +45,19 @@
     "en": "Treasure and portal races"
   },
   {
+    "id": "draft",
+    "zh": "DRAFTOUT：双人独占抢格",
+    "en": "DRAFTOUT: exclusive-cell duels"
+  },
+  {
     "id": "rooms",
     "zh": "自定义房间",
     "en": "Custom rooms"
+  },
+  {
+    "id": "rng",
+    "zh": "RNG 统一与战利品调整",
+    "en": "Shared RNG and loot adjustments"
   },
   {
     "id": "replay",

@@ -9,4 +9,4 @@ BoardRaid is a task competition mod for Minecraft Java Edition 1.16.1. Install t
 ## Reading order
 Read Installation and Troubleshooting first, then Main game and Races. Individual goals are listed in the [task directory](https://boardraid.cn/en/tasks).
 ## Scope
-This handbook targets stable 0.5.5. Development and experience-server features may differ. Room settings and the official rules take precedence.
+This handbook follows the latest production release and its published rules. Development and experience-server features may differ. Room settings and the official rules take precedence.

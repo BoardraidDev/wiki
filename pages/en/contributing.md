@@ -5,7 +5,7 @@ Edit the relevant pages/zh and pages/en articles in the [Wiki repository](https:
 ## Editorial policy
 Write original explanations; do not copy third-party prose or screenshots. Give source links, dates and applicable versions.
 ## Versions
-The [releases repository](https://github.com/BoardraidDev/releases) hosts official stable client jars and checksums. Stable 0.5.5 is the baseline here. Documentation updates do not publish a client. Submit community PRs directly to this repository's master branch for owner review; private source release workflows do not apply.
+The [releases repository](https://github.com/BoardraidDev/releases) hosts official stable client jars and checksums. The handbook follows the latest production release. Documentation updates do not publish a client. Submit community PRs directly to this repository's master branch for owner review; private source release workflows do not apply.
 ## API
 See [API docs](https://github.com/BoardraidDev/api-docs) for public read-only contracts. Never publish game authentication, internal controls or credentials in examples.
 
