@@ -9,6 +9,17 @@ from urllib.parse import urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def validate_catalog(catalog):
+    ids = set()
+    for row in catalog:
+        slug = row['id']
+        if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', slug) or slug in ids:
+            raise ValueError('Invalid or duplicate chapter identifier')
+        if not all(isinstance(row[lang], str) and row[lang] for lang in ['zh', 'en']):
+            raise ValueError('Missing chapter title')
+        ids.add(slug)
+
+
 def inline(value):
     value = html.escape(value)
     def link(match):
@@ -37,6 +48,7 @@ def markdown(value):
 
 def render(lang):
     catalog = json.loads((ROOT / 'catalog.json').read_text(encoding='utf-8'))
+    validate_catalog(catalog)
     prefix = '/en' if lang == 'en' else ''
     title = 'Player Wiki' if lang == 'en' else '玩家 Wiki'
     toc = ''.join('<a href="#' + row['id'] + '">' + html.escape(row[lang]) + '</a>' for row in catalog)
@@ -71,6 +83,14 @@ def render(lang):
 
 
 def self_test():
+    validate_catalog([{'id': 'getting-started', 'zh': 'Start', 'en': 'Start'}])
+    for slug in ['../private', '\"><script>', 'UPPER CASE']:
+        try:
+            validate_catalog([{'id': slug, 'zh': 'Title', 'en': 'Title'}])
+        except ValueError:
+            pass
+        else:
+            raise AssertionError('unsafe chapter identifier accepted')
     assert '<script>' not in inline('<script>alert(1)</script>')
     try:
         inline('[unsafe](javascript:alert)')
