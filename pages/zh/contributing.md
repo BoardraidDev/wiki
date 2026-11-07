@@ -5,7 +5,7 @@
 ## 内容要求
 用自己的话解释玩家操作，不搬运第三方正文或截图；引用时给出原始链接、日期及适用版本。
 ## 版本入口
-[releases 仓库](https://github.com/BoardraidDev/releases)记录正式版本和官网入口。0.5.5 是本次整理核对的正式版本；修改文档不代表发布新客户端。社区直接向本仓库 master 提 PR，由项目所有者审核，不要求贡献者遵循私人源码发布流程。
+[releases 仓库](https://github.com/BoardraidDev/releases)发布正式客户端 JAR 与校验和。0.5.5 是本次整理核对的正式版本；修改文档不代表发布新客户端。社区直接向本仓库 master 提 PR，由项目所有者审核，不要求贡献者遵循私人源码发布流程。
 ## API 开发
 在[API 文档仓库](https://github.com/BoardraidDev/api-docs)查看公开只读接口与 OpenAPI 文件。不要将游戏认证、内部控制接口或服务器密钥写入示例。
 
