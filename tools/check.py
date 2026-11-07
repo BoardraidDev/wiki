@@ -29,6 +29,7 @@ def check(root):
     if (root/'catalog.json').exists():
         import subprocess, tempfile
         subprocess.run([sys.executable,str(root/'tools/build.py'),'--self-test'],check=True)
+        subprocess.run([sys.executable,str(root/'tools/test_handbook.py')],check=True)
         with tempfile.TemporaryDirectory() as td:
             subprocess.run([sys.executable,str(root/'tools/build.py'),'--output',td],check=True)
             assert (Path(td)/'wiki.html').exists() and (Path(td)/'en/wiki.html').exists()
