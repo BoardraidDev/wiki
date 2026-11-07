@@ -6,13 +6,18 @@
   },
   {
     "id": "installation",
-    "zh": "Prism 安装",
-    "en": "Prism installation"
+    "zh": "Prism 与 MultiMC 安装",
+    "en": "Prism and MultiMC"
   },
   {
     "id": "main-game",
     "zh": "主玩法与选牌",
     "en": "Main game and drafting"
+  },
+  {
+    "id": "casual",
+    "zh": "休闲模式",
+    "en": "Casual modes"
   },
   {
     "id": "races",
